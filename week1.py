@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+from __future__ import absolute_import, division, print_function
+
+__author__ = 'Li Hao'
+__date__ = '2019.05.05'
+
+
 import tensorflow as tf
 import numpy as np
 from tensorflow import keras

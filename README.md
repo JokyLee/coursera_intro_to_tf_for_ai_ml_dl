@@ -11,6 +11,12 @@ NOTE: [cudnn](https://developer.nvidia.com/rdp/cudnn-download) is not contained 
 
 ## Week1
 
-[Housing Prices](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%201%20-%20House%20Prices/Exercise_1_House_Prices_Question.ipynb)  
+[Housing Prices (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%201%20-%20House%20Prices/Exercise_1_House_Prices_Question.ipynb)  
+[Housing Prices (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%201%20-%20House%20Prices/Exercise_1_House_Prices_Question.ipynb)    
 [My Answer](./week1.py)  
 
+## Week2
+
+[Handwriting Recognition (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%202%20-%20Handwriting%20Recognition/Exercise2-Question.ipynb)    
+[Handwriting Recognition (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%202%20-%20Handwriting%20Recognition/Exercise2-Question.ipynb)    
+[My Answer](./week2.py)  
