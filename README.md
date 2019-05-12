@@ -20,3 +20,8 @@ NOTE: [cudnn](https://developer.nvidia.com/rdp/cudnn-download) is not contained 
 [Handwriting Recognition (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%202%20-%20Handwriting%20Recognition/Exercise2-Question.ipynb)    
 [Handwriting Recognition (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%202%20-%20Handwriting%20Recognition/Exercise2-Question.ipynb)    
 [My Answer](./week2.py)  
+
+## Week3
+[Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
+[Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
+[My Answer](./week3.py) 
