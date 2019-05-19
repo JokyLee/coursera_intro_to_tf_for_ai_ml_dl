@@ -9,10 +9,10 @@ import tensorflow as tf
 
 # YOUR CODE STARTS HERE
 class myCallback(tf.keras.callbacks.Callback):
-  def on_epoch_end(self, epoch, logs={}):
-    if(logs.get('acc')>0.998):
-      print("\nReached 99.8% accuracy so cancelling training!")
-      self.model.stop_training = True
+    def on_epoch_end(self, epoch, logs={}):
+        if(logs.get('acc')>0.998):
+            print("\nReached 99.8% accuracy so cancelling training!")
+            self.model.stop_training = True
 callbacks = myCallback()
 # YOUR CODE ENDS HERE
 

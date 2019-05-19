@@ -25,3 +25,8 @@ NOTE: [cudnn](https://developer.nvidia.com/rdp/cudnn-download) is not contained 
 [Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
 [Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
 [My Answer](./week3.py) 
+
+## Week4
+[Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
+[Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
+[My Answer](./week4.py) 
