@@ -25,7 +25,7 @@ from tensorflow.keras.preprocessing import image
 
 
 _cur_dir = os.path.abspath(os.path.join(__file__, "../"))
-model = tf.keras.models.load_model(os.path.join(_cur_dir, "data/models/cat_vs_dog/week6_cat_v_dog_history"))
+model = tf.keras.models.load_model(os.path.join(_cur_dir, "data/models/cat_vs_dog/week6_cat_v_dog_model"))
 test_dir = os.path.join(_cur_dir, "data/cat_v_dog/src_kaggle/test1")
 cv2.namedWindow("img", cv2.WINDOW_NORMAL)
 for f in os.listdir(test_dir):
