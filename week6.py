@@ -2,15 +2,15 @@
 from __future__ import absolute_import, division, print_function
 
 __author__ = 'Li Hao'
-__date__ = '2019.05.30'
+__date__ = '2019.06.16'
 
 
 # In this exercise you will train a CNN on the FULL Cats-v-dogs dataset
 # This will require you doing a lot of data preprocessing because
 # the dataset isn't split into training and validation for you
-# This code block has all the required inputs
+# This code b
+# lock has all the required inputs
 import os
-import sys
 import math
 import zipfile
 import random
@@ -18,6 +18,7 @@ import tensorflow as tf
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from shutil import copyfile, rmtree
+
 
 # Write a python function called split_data which takes
 # a SOURCE directory containing the files
@@ -73,7 +74,9 @@ TESTING_DOGS_DIR = os.path.join(_cur_dir, "data/cat_v_dog/testing/dogs/")
 
 OVERWRITE = False
 split_size = .9
-if OVERWRITE:
+is_dir_exits = os.path.exists(TRAINING_CATS_DIR) and os.path.exists(TRAINING_DOGS_DIR) \
+               and os.path.exists(TESTING_CATS_DIR) and os.path.exists(TESTING_DOGS_DIR)
+if OVERWRITE or not is_dir_exits:
     rmtree(TRAINING_CATS_DIR, ignore_errors=True)
     rmtree(TRAINING_DOGS_DIR, ignore_errors=True)
     rmtree(TESTING_CATS_DIR, ignore_errors=True)
@@ -89,6 +92,12 @@ print(len(os.listdir(TRAINING_CATS_DIR)))
 print(len(os.listdir(TRAINING_DOGS_DIR)))
 print(len(os.listdir(TESTING_CATS_DIR)))
 print(len(os.listdir(TESTING_DOGS_DIR)))
+
+# Expected output:
+# 11250
+# 11250
+# 1250
+# 1250
 
 # DEFINE A KERAS MODEL TO CLASSIFY CATS V DOGS
 # USE AT LEAST 3 CONVOLUTION LAYERS
@@ -109,28 +118,35 @@ model = tf.keras.models.Sequential([
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
-print(model.summary())
-model.compile(
-    optimizer=RMSprop(lr=0.001),
-    loss='binary_crossentropy',
-    metrics = ['acc']
-)
+model.compile(optimizer=RMSprop(lr=0.001), loss='binary_crossentropy', metrics=['acc'])
 
 TRAINING_DIR = os.path.join(_cur_dir, "data/cat_v_dog/training") #YOUR CODE HERE
-train_datagen = ImageDataGenerator(rescale=1.0/255.) #YOUR CODE HERE
+train_datagen = ImageDataGenerator(
+    rescale=1.0/255.,
+    rotation_range=40,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    shear_range=0.2,
+    zoom_range=0.2,
+    horizontal_flip=True,
+    fill_mode='nearest'
+) #YOUR CODE HERE
 train_generator = train_datagen.flow_from_directory(
-    TRAINING_DIR, batch_size=20, class_mode='binary', target_size=(150, 150)
+    TRAINING_DIR, batch_size=100, class_mode='binary', target_size=(150, 150)
 )   #YOUR CODE HERE
 
 VALIDATION_DIR = os.path.join(_cur_dir, "data/cat_v_dog/testing") #YOUR CODE HERE
 validation_datagen = ImageDataGenerator(rescale=1.0/255.) #YOUR CODE HERE
 validation_generator = validation_datagen.flow_from_directory(
-    VALIDATION_DIR, batch_size=20, class_mode='binary', target_size=(150, 150)
+    VALIDATION_DIR, batch_size=100, class_mode='binary', target_size=(150, 150)
 )
 #YOUR CODE HERE
 
 history = model.fit_generator(
-    train_generator, epochs=15, verbose=1, validation_data=validation_generator
+    train_generator,
+    epochs=15,
+    verbose=1,
+    validation_data=validation_generator
 )
 
 # PLOT LOSS AND ACCURACY
@@ -164,11 +180,13 @@ plt.plot(epochs, val_loss, 'b', "Validation Loss")
 
 
 plt.title('Training and validation loss')
+plt.show()
 
 # Desired output. Charts with training and validation metrics. No crash :)
+
 import pickle
 SAVED_PATH = os.path.join(_cur_dir, "data/models/cat_vs_dog")
 os.makedirs(SAVED_PATH, exist_ok=True)
-model.save(os.path.join(SAVED_PATH, "week5_cat_v_dog_model"))
-with open(os.path.join(SAVED_PATH, "week5_cat_v_dog_history"), "wb") as f:
+model.save(os.path.join(SAVED_PATH, "week6_cat_v_dog_model"))
+with open(os.path.join(SAVED_PATH, "week6_cat_v_dog_history"), "wb") as f:
     pickle.dump(history.history, f)
