@@ -22,16 +22,26 @@ NOTE: [cudnn](https://developer.nvidia.com/rdp/cudnn-download) is not contained 
 [My Answer](./week2.py)  
 
 ## Week3
-[Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
-[Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
+[Convolutions - mnist (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
+[Convolutions - mnist (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%203%20-%20Convolutions/Exercise%203%20-%20Question.ipynb)  
 [My Answer](./week3.py) 
 
 ## Week4
-[Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
-[Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
+[Handling Complex Images - Happy or Sad (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
+[Handling Complex Images - Happy or Sad (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%204%20-%20Handling%20Complex%20Images/Exercise%204-Question.ipynb)  
 [My Answer](./week4.py) 
 
 ## Week5
-[Convolutions (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%205%20-%20Real%20World%20Scenarios/Exercise%205%20-%20Question.ipynb)  
-[Convolutions (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%205%20-%20Real%20World%20Scenarios/Exercise%205%20-%20Question.ipynb)  
+[Real World Scenarios - Cats v Dogs (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%205%20-%20Real%20World%20Scenarios/Exercise%205%20-%20Question.ipynb)  
+[Real World Scenarios - Cats v Dogs (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%205%20-%20Real%20World%20Scenarios/Exercise%205%20-%20Question.ipynb)  
 [My Answer](./week5.py) 
+
+## Week6
+[Cats v Dogs with Augmentation (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%206%20-%20Cats%20v%20Dogs%20with%20Augmentation/Exercise%206%20-%20Question.ipynb)  
+[Cats v Dogs with Augmentation (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%206%20-%20Cats%20v%20Dogs%20with%20Augmentation/Exercise%206%20-%20Question.ipynb)  
+[My Answer](./week6.py) 
+
+## Week7
+[Transfer Learning - Horse or Human (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%207%20-%20Transfer%20Learning/Exercise%207%20-%20Question.ipynb)  
+[Transfer Learning - Horse or Human (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%207%20-%20Transfer%20Learning/Exercise%207%20-%20Question.ipynb)  
+[My Answer](./week7.py) 
