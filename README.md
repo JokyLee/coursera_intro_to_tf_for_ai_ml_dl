@@ -45,3 +45,8 @@ NOTE: [cudnn](https://developer.nvidia.com/rdp/cudnn-download) is not contained 
 [Transfer Learning - Horse or Human (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%207%20-%20Transfer%20Learning/Exercise%207%20-%20Question.ipynb)  
 [Transfer Learning - Horse or Human (github)](https://github.com/lmoroney/dlaicourse/blob/master/Exercises/Exercise%207%20-%20Transfer%20Learning/Exercise%207%20-%20Question.ipynb)  
 [My Answer](./week7.py) 
+
+## Week8
+[Multiclass with Signs (colab)](https://colab.research.google.com/github/lmoroney/dlaicourse/blob/master/Exercises/Exercise%208%20-%20Multiclass%20with%20Signs/Exercise%208%20-%20Question.ipynb)  
+[Multiclass with Signs (github)](https://github.com/lmoroney/dlaicourse/tree/master/Exercises/Exercise%208%20-%20Multiclass%20with%20Signs)  
+[My Answer](./week7.py) 
